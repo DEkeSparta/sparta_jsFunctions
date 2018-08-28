@@ -9,7 +9,7 @@ function printPrimes(){
   var result = "";
   for(var i=2;i<=177;i++){
     isPrime = true;
-    for(var j=2;j<Math.pow(i,0.5);j++){
+    for(var j=2;j<=Math.pow(i,0.5);j++){
       if(i%j==0){
         isPrime = false;
         break;
