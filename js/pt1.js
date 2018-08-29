@@ -1,12 +1,13 @@
 var arr = [[34,65,54],[76,32,74],[43,86,32]];
-console.log(printPrimes());
-console.log(secondLargest(arr));
-console.log(countEven(arr));
-console.log(printAllDoWhile(arr));
-console.log(printAllForIn(arr));
+// console.log(printPrimes());
+//console.log(secondLargest(arr));
+// console.log(countEven(arr));
+// console.log(printAllDoWhile(arr));
+// console.log(printAllForIn(arr));
 
 function printPrimes(){
   var result = "";
+  var isPrime;
   for(var i=2;i<=177;i++){
     isPrime = true;
     for(var j=2;j<=Math.pow(i,0.5);j++){
@@ -67,7 +68,6 @@ function printAllDoWhile(arr2D){
 
 function printAllForIn(arr2D){
   var output = "";
-  var i=0;
   for (var row in arr2D){
     for (var col in arr2D[row])  {
       output += arr2D[row][col] + ", ";
